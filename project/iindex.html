@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Document</title>
+    <style>
+        body {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            
+        }
+        #fixFirst {
+            position: fixed;
+            display: flex;               
+            align-items: center;         
+            justify-content: center;     
+            height: 50px;
+            background: white;
+            border-bottom: 5px solid rgb(223, 221, 221);
+            width: 100%;
+            color: black;
+            font-family: 나눔고딕;
+            padding: 0 20px;            
+        }
+        #img {
+            position: absolute;          /* 절대 위치 */
+            left: 20px;                
+        }
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: 1000;
+            font-size: 120%;
+        }
+        a:hover {
+            transform: scale(0.98);
+            color: blue;
+        }
+        #center{
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div id="fixFirst">
+        <div id="img">
+             <img src="./images/image.png" alt="" />
+        </div>
+        <div id="box">
+            <a href="">보상 서비스 안내 바로가기</a>
+        </div>
+    </div>
+
+    <main>
+        <div id="center">
+           <a href="">공제상품</a>
+        </div>
+    </main>
+</body>
+</html>
