@@ -9,7 +9,11 @@
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-            
+            position: relative;
+        }
+        div, main{
+            margin: 0;
+            padding: 0;
         }
         #fixFirst {
             position: fixed;
@@ -25,7 +29,7 @@
             padding: 0 20px;            
         }
         #img {
-            position: absolute;          /* 절대 위치 */
+            position: absolute;          
             left: 20px;                
         }
         a {
@@ -38,8 +42,31 @@
             transform: scale(0.98);
             color: blue;
         }
-        #center{
-            position: absolute;
+        .content {
+         position: absolute;
+         padding: 80px;
+         width: 50px;
+         box-sizing: border-box;
+        }
+        .content:first-of-type {
+         margin-top: 60px;
+        }
+        .content#co1 {
+           border: 1px solid black;
+           background: aqua;
+           font-size: 50px;
+        }
+        .content#co2 {
+           border: 1px solid black;
+           background: aqua;
+        }
+        .content#co3 {
+           border: 1px solid black;
+           background: aqua;
+        }
+        .content#co4 {
+           border: 1px solid black;
+           background: aqua;
         }
     </style>
 </head>
@@ -52,11 +79,20 @@
             <a href="">보상 서비스 안내 바로가기</a>
         </div>
     </div>
-
-    <main>
-        <div id="center">
-           <a href="">공제상품</a>
-        </div>
-    </main>
+   
+     <div class="content" id="co1">
+            <h2 style="font-size: 20px;">인사말</h2>
+     </div>
+     <div class="content" id="co2">
+            <h2 style="font-size: 20px;">연합회 소개</h2>
+     </div>
+     <div class="content" id="co3">
+            <h2 style="font-size: 20px;">공제보험</h2>
+     </div>
+     <div class="content" id="co4">
+            <h2 style="font-size: 20px;">공지사항</h2>
+     </div>
+        
+    
 </body>
 </html>
