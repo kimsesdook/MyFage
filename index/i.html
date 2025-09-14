@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>공제조합 메인 페이지</title>
+  <style>
+    body {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: '나눔고딕', sans-serif;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    a:hover, a:focus {
+      color: blue;
+      font-weight: bold;
+    }
+
+    #fixFirst {
+      position: fixed;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 50px;
+      background: white;
+      border-bottom: 5px solid rgb(223, 221, 221);
+      width: 100%;
+      padding: 0 20px;
+      z-index: 1000;
+    }
+
+    #fixFirst img {
+      height: 40px;
+    }
+
+    #fixFirst a {
+      color: red;
+      font-weight: bold;
+    }
+
+    .spacer {
+      height: 60px;
+    }
+
+    main {
+      display: flex;
+      margin-left: 20px;
+    }
+
+    .left-col {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .content {
+      width: 200px;
+      height: 100px;
+      margin: 10px 0;
+      background: turquoise;
+      text-align: center;
+      line-height: 100px;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .content:hover {
+      background: teal;
+    }
+
+    .long-box {
+      height: 180px;
+    }
+
+    .right-col {
+      margin-left: 40px;
+      flex: 1;
+    }
+
+    .login-box {
+      border: 1px solid #ccc;
+      padding: 15px;
+      width: 250px;
+      margin-bottom: 20px;
+    }
+
+    .login-box input {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+
+    .login-box button {
+      width: 100%;
+      padding: 8px;
+      background: #007BFF;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .login-box button:hover {
+      background: #0056b3;
+    }
+
+    .search-box {
+      margin: 20px;
+      text-align: center;
+    }
+
+    .search-box input {
+      width: 50%;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    section {
+      margin: 20px;
+    }
+
+    ul.news-list {
+      padding-left: 20px;
+    }
+
+    .footer {
+      border-top: 1px solid #ccc;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      background: #f9f9f9;
+    }
+
+    .footer .links {
+      margin-bottom: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- 고정된 상단 -->
+  <header id="fixFirst">
+    <img src="./images/image.png" alt="로고" />
+    <a href="#">보상 서비스 안내 바로가기</a>
+  </header>
+
+  <div class="spacer"></div>
+
+  <!-- 검색창 -->
+  <div class="search-box">
+    <input type="text" placeholder="검색어를 입력하세요..." />
+  </div>
+
+  <main>
+    <!-- 왼쪽 상자들 -->
+    <div class="left-col">
+      <a href="intro.html"><div class="content">인사말</div></a>
+      <a href="intro.html"><div class="content">연합회 소개</div></a>
+      <a href="insurance.html"><div class="content">공제보험</div></a>
+      <a href="notice.html"><div class="content">공지사항</div></a>
+      <a href="branches.html"><div class="content long-box">전국지부안내</div></a>
+
+      <a href="payout.html"><div class="content">지급내역 조회</div></a>
+      <a href="support.html"><div class="content">민원상담</div></a>
+      <a href="complain.html"><div class="content">불만 접수 센터</div></a>
+    </div>
+
+    <!-- 오른쪽 영역 -->
+    <div class="right-col">
+      <!-- 로그인 -->
+      <div class="login-box">
+        <h4>로그인</h4>
+        <input type="text" placeholder="아이디" />
+        <input type="password" placeholder="비밀번호" />
+        <button>로그인</button>
+      </div>
+
+      <!-- 최근소식 -->
+      <section>
+        <h3>📢 최근 소식</h3>
+        <ul class="news-list">
+          <li><a href="#">2025년 정기총회 안내</a></li>
+          <li><a href="#">보험료 납부기한 연장 안내</a></li>
+          <li><a href="#">새로운 모바일 앱 출시</a></li>
+        </ul>
+      </section>
+
+      <!-- 추가 정보 영역 -->
+      <section>
+        <article>
+          <h4>🚗 차량 조회</h4>
+          <p>차량 번호로 사고 이력 및 보험 가입 여부를 조회할 수 있습니다.</p>
+        </article>
+
+        <article>
+          <h4>🕐 상담 시간 안내</h4>
+          <p>월~금 오전 9시 ~ 오후 6시 / 점심시간: 12시~1시</p>
+        </article>
+      </section>
+
+      <!-- 간단한 테이블 -->
+      <section>
+        <h3>💰 지급내역 예시</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>지급일</th>
+              <th>항목</th>
+              <th>금액</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2025-09-10</td>
+              <td>차량 사고</td>
+              <td>1,200,000원</td>
+            </tr>
+            <tr>
+              <td>2025-08-21</td>
+              <td>자연재해</td>
+              <td>750,000원</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </main>
+
+  <!-- 푸터 -->
+  <footer class="footer">
+    <div class="links">
+      개인정보처리방침 | 이용약관 | 이메일무단수집거부 | 사이트맵
+    </div>
+    <div>
+      주소: 서울특별시 중구 무교로 00 | 대표번호: 1577-0000<br />
+      COPYRIGHT © 2025 Korea Mutual Aid Association. ALL RIGHTS RESERVED.
+    </div>
+  </footer>
+</body>
+</html>

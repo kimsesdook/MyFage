@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Document</title>
+    <style>
+        body {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+        div, main{
+            margin: 0;
+            padding: 0;
+        }
+        #fixFirst {
+            position: fixed;
+            display: flex;               
+            align-items: center;         
+            justify-content: center;     
+            height: 50px;
+            background: white;
+            border-bottom: 5px solid rgb(223, 221, 221);
+            width: 100%;
+            color: black;
+            font-family: 나눔고딕;
+            padding: 0 20px;            
+        }
+        #img {
+            position: absolute;          
+            left: 20px;                
+        }
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: 1000;
+            font-size: 120%;
+        }
+        a:hover {
+            transform: scale(0.98);
+            color: blue;
+        }
+         .spacer {
+         height: 20px; 
+        }
+        main{
+            display: flex;
+            margin-top: 30px; 
+            margin-left: 250px;
+        }
+        .content-box{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content {
+         width: 150px;
+         height: 100px;
+         box-sizing: border-box;
+         margin-left: 30px;
+         font-size: 20px;
+         border: 1px solid black;
+         background: turquoise;
+         
+        }
+        #co1{
+            text-align: center;
+            line-height: 100px;
+            font-size: 20px;
+            color: white;
+        }
+        #co2{
+            text-align: center;
+            line-height: 100px;
+            font-size: 20px;
+            color: white;
+        }
+        #co3{
+            text-align: center;
+            line-height: 100px;
+            font-size: 20px;
+            color: white;
+        }
+        #co4{
+            text-align: center;
+            line-height: 100px;
+            font-size: 20px;
+            color: white;
+        }
+        #co5{
+            text-align: center;
+            line-height: 100px;
+            font-size: 20px;
+            color: white;
+            height: 180px;
+        }
+        #co6{
+            text-align: center;
+            font-size: 15px;
+            color: black;
+        }
+        main #plus1{
+            font-size: 25px;
+            line-height: 100px;
+            color: white;
+        }
+        #co7{
+            text-align: center;
+            font-size: 15px;
+            color: black;
+        }
+        main #plus2{
+            font-size: 25px;
+            line-height: 100px;
+            color: white;
+        }
+        #co8{
+            text-align: center;
+            font-size: 15px;
+            color: black;
+        }
+        main #plus3{
+            font-size: 25px;
+            line-height: 100px;
+            color: white;
+        }
+        .second-box{
+            display: flex;
+            flex-direction: column;
+        }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      height: 300px;
+     
+    }
+
+    td {
+      border: 1px solid #999;
+      text-align: center;
+      background-color: #f2f9ff;
+      font-size: 16px;
+      font-weight: bold;
+      color: #003355;
+    }
+        
+       
+        
+    </style>
+</head>
+<body>
+    <div id="fixFirst">
+        <div id="img">
+             <img src="./images/image.pn" alt="" />
+        </div>
+        <div id="box">
+            <a href="">보상 서비스 안내 바로가기</a>
+        </div>
+    </div>
+    <div class="spacer"></div>
+    <main>
+    <div class="content-box"> <div class="content" id="co1">인사말</div>
+    <div class="content" id="co2">연합회 소개</div>
+    <div class="content" id="co3">공제보험</div>
+    <div class="content" id="co4">공지사항</div>
+    <div class="content" id="co5">전국지부안내
+        <button >바로가기 ></button>
+    </div>
+    <div class="content" id="co6">사고접수/현장출동
+        <div id="plus1">
+           1577-1111
+        </div>
+    </div>
+    <div class="content" id="co7">민원콜센터
+        <div id="plus2">
+           1577-2222
+        </div>
+    </div>
+    <div class="content" id="co8">현장출동 불만접수센터
+        <div id="plus3">
+           1577-3333
+        </div>
+    </div>
+    </div>
+    <div class="second-box">
+        <img src="./images/image.png" alt="이미지" style="width: 580px; height: 580px; " />
+    <div><table>
+  <tr>
+    <td>
+      <div>지급내역조회</div>
+      
+    </td>
+    <td>
+      <div>민원 상담</div>
+      
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div>불만 접수</div>
+      
+    </td>
+    <td>
+      <div>문의사항</div>
+      
+    </td>
+  </tr>
+</table></div>
+    </div>
+   
+  </main>
+        
+    
+</body>
+</html>
