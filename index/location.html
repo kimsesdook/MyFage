@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지부안내</title>
+    <style>
+    body {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .menu{
+            box-sizing: border-box;
+            text-align: center;
+            font-size: 50px;
+            border-bottom: 2px solid black;
+            color: aqua;
+        }
+ 
+    .location {
+      display: none;
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid #333;
+      width: 300px;
+      text-align: center;
+    }
+    #seoul:checked ~ #loc-seoul,
+    #busan:checked ~ #loc-busan,
+    #daegu:checked ~ #loc-daegu,
+    #gwangju:checked ~ #loc-gwangju {
+      display: block;
+      text-align: center;
+      margin: 50px auto 0;
+    }
+ 
+    </style>
+  
+</head>
+<body>
+    <div class="menu">지부 안내
+        <div style="font-size: 10px; color: black; ">자동차와 고객만을 위하는 공제조합입니다.</div>
+    </div>
+
+  <input type="radio" id="seoul" name="location" />
+  <label for="seoul">서울
+  </label>
+
+  <input type="radio" id="busan" name="location" />
+  <label for="busan">부산
+  </label>
+
+  <input type="radio" id="daegu" name="location" />
+  <label for="daegu">대구
+  </label>
+
+  <input type="radio" id="gwangju" name="location" />
+  <label for="gwangju">광주
+  </label>
+
+
+
+  <div id="loc-seoul" class="location"><a href="https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EC%86%A1%ED%8C%8C%EA%B5%AC%20%EC%98%AC%EB%A6%BC%ED%94%BD%EB%A1%9C%20319%20%EC%83%88%EB%A7%88%EC%9D%84%20%EA%B5%90%ED%86%B5%ED%9A%8C%EA%B4%80%209%EC%B8%B5/address/14149315.6074464,4511227.7237282,%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EC%86%A1%ED%8C%8C%EA%B5%AC%20%EC%98%AC%EB%A6%BC%ED%94%BD%EB%A1%9C%20319,new?c=15.00,0,0,0,dh&isCorrectAnswer=true ">서울</a>
+<p>서울특별시 송파구 올림픽로 319 새마을 교통회관 9층<br>
+   (서울특별시 송파구 신천동 11-7 교통회관 9층)</p></div>
+  <div id="loc-busan" class="location"><a href="https://map.naver.com/p/search/%EB%B6%80%EC%82%B0%EA%B4%91%EC%97%AD%EC%8B%9C%20%EB%8F%99%EA%B5%AC%20%EC%A4%91%EC%95%99%EB%8C%80%EB%A1%9C%20332%EB%B2%88%EA%B8%B8%209%28%EC%B4%88%EB%9F%89%EB%8F%99%29%202,3%EC%B8%B5%20%28%EB%B6%80%EC%82%B0%EA%B4%91%EC%97%AD%EC%8B%9C%20%EB%8F%99%EA%B5%AC%20%EC%B4%88%EB%9F%893%EB%8F%99%201150-7%202,3%EC%B8%B5%29/address/14365410.9288015,4180954.6972772,%EB%B6%80%EC%82%B0%EA%B4%91%EC%97%AD%EC%8B%9C%20%EB%8F%99%EA%B5%AC%20%EC%A4%91%EC%95%99%EB%8C%80%EB%A1%9C332%EB%B2%88%EA%B8%B8%209,new?c=15.00,0,0,0,dh&isCorrectAnswer=true">부산</a>
+<p>부산광역시 동구 중앙대로 332번길 9(초량동) 2,3층 <br>
+(부산광역시 동구 초량3동 1150-7 2,3층)</p></div>
+  <div id="loc-daegu" class="location"><a href="https://map.naver.com/p/search/%EB%8C%80%EA%B5%AC%EA%B4%91%EC%97%AD%EC%8B%9C%20%EB%8B%AC%EC%84%9C%EA%B5%AC%20%EC%84%B1%EC%84%9C%EA%B3%B5%EB%8B%A8%EB%A1%9C%20346%28%EC%9B%94%EC%84%B1%EB%8F%99%29%20%EB%8C%80%EA%B5%AC%EB%AC%BC%EB%A5%98%ED%84%B0%EB%AF%B8%EB%84%90%20505%ED%98%B8%20%28%EB%8C%80%EA%B5%AC%EA%B4%91%EC%97%AD%EC%8B%9C%20%EB%8B%AC%EC%84%9C%EA%B5%AC%20%EC%9B%94%EC%84%B1%EB%8F%99%20895-7%20%EB%8C%80%EA%B5%AC%ED%99%94%EB%AC%BC%ED%84%B0%EB%AF%B8%EB%84%90%20%EA%B4%80%EB%A6%AC%EB%8F%99%20505%ED%98%B8%29/address/14306817.4250167,4278125.697312,%EB%8C%80%EA%B5%AC%EA%B4%91%EC%97%AD%EC%8B%9C%20%EB%8B%AC%EC%84%9C%EA%B5%AC%20%EC%84%B1%EC%84%9C%EA%B3%B5%EB%8B%A8%EB%A1%9C%20346,new?c=15.00,0,0,0,dh&isCorrectAnswer=true">대구</a>
+<p>대구광역시 달서구 성서공단로 346(월성동) 대구물류터미널 505호 <br>
+(대구광역시 달서구 월성동 895-7 대구화물터미널 관리동 505호)</p></div>
+  <div id="loc-gwangju" class="location"><a href="https://map.naver.com/p/search/%EA%B4%91%EC%A3%BC%EA%B4%91%EC%97%AD%EC%8B%9C%20%EB%B6%81%EA%B5%AC%20%EB%8F%99%EB%AC%B8%EB%8C%80%EB%A1%9C%20280(%EA%B0%81%ED%99%94%EB%8F%99)%20(%EA%B4%91%EC%A3%BC%EA%B4%91%EC%97%AD%EC%8B%9C%20%EB%B6%81%EA%B5%AC%20%EA%B0%81%ED%99%94%EB%8F%99%20380)?c=15.00,0,0,0,dh">광주</a>
+<p>광주광역시 북구 동문대로 280(각화동) <br>
+(광주광역시 북구 각화동 380)</p></div>
+</body>
+</html> 
