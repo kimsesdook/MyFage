@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>초기 화면</title>
+    <style>
+        body {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+        div, main{
+            margin: 0;
+            padding: 0;
+        }
+        #fixFirst {
+            position: fixed;
+            display: flex;               
+            align-items: center;         
+            justify-content: center;     
+            height: 50px;
+            background: white;
+            border-bottom: 5px solid rgb(223, 221, 221);
+            width: 100%;
+            color: black;
+            font-family: 나눔고딕;
+            padding: 0 20px;            
+        }
+        #img {
+            position: absolute;          
+            left: 20px;                
+        }
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: 1000;
+            font-size: 120%;
+        }
+        a:hover {
+            transform: scale(0.98);
+            color: blue;
+        }
+         .spacer {
+         height: 20px; 
+        }
+        main{
+            display: flex;
+            margin-top: 30px; 
+            margin-left: 250px;
+        }
+        .content-box{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content {
+         width: 150px;
+         height: 100px;
+         box-sizing: border-box;
+         margin-left: 30px;
+         font-size: 20px;
+         border: 1px solid black;
+         background: turquoise;
+         
+        }
+        #co1{
+            text-align: center;
+            line-height: 100px;
+            font-size: 20px;
+            color: white;
+        }
+        #co2{
+            text-align: center;
+            line-height: 100px;
+            font-size: 20px;
+            color: white;
+        }
+        #co3{
+            text-align: center;
+            line-height: 100px;
+            font-size: 20px;
+            color: white;
+        }
+        #co4{
+            text-align: center;
+            line-height: 100px;
+            font-size: 20px;
+            color: white;
+        }
+        #co5{
+            text-align: center;
+            line-height: 100px;
+            font-size: 20px;
+            color: white;
+            height: 180px;
+        }
+        #co6{
+            text-align: center;
+            font-size: 15px;
+            color: black;
+        }
+        main #plus1{
+            font-size: 25px;
+            line-height: 100px;
+            color: white;
+        }
+        #co7{
+            text-align: center;
+            font-size: 15px;
+            color: black;
+        }
+        main #plus2{
+            font-size: 25px;
+            line-height: 100px;
+            color: white;
+        }
+        #co8{
+            text-align: center;
+            font-size: 15px;
+            color: black;
+        }
+        main #plus3{
+            font-size: 25px;
+            line-height: 100px;
+            color: white;
+        }
+.second-box {
+  background:#f5f5f5; 
+  border: 1px solid #ccc;
+  height: 880px;
+  width: 580px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;     /* 수평 가운데 정렬 */
+  justify-content: flex-start; /* 위에서부터 정렬 (필요에 따라 center로 변경 가능) */
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+
+
+
+.content > a {
+  color: white;
+  text-decoration: none;
+  transition: 0.1s;
+}
+.content > a:focus {
+      font-size: 10px;
+      background-color: #ddf;
+      outline: none;
+}
+    .content > a:active {
+      transform: scale(0.95);
+    }
+    
+   #footer {
+    background-color: #f2f2f2;
+    color: #555;
+    box-sizing: border-box;
+    height: 70px;
+    padding-left: 100px; 
+    display: flex;
+    gap: 20px;
+}
+
+
+
+        
+       
+        
+    </style>
+</head>
+<body>
+    <div id="fixFirst">
+        <div id="img">
+             <img src="./images/image.pn" alt="" />
+        </div>
+       <form style="align-items: center;">
+       <input type="text" placeholder="검색어 입력" style="padding: 5px; font-size: 14px; border: 1px solid #ccc; border-radius: 5px;" />
+       <button type="submit" style="margin-left: 5px; padding: 6px 10px; background-color: #003355; color: white; border: none; border-radius: 5px;">검색</button>
+       </form>
+    </div>
+    <div class="spacer"></div>
+    <main>
+    <div class="content-box"> <div class="content" id="co1">
+        <a href="index.html">홈으로</a></div>
+    <div class="content" id="co2">
+        <a href="company.html">연합회 소개</a></div>
+    <div class="content" id="co3">
+        <a href="service.html">공제보험</a></div>
+    <div class="content" id="co4">
+        <a href="hi.html">공지사항</a></div>
+    <div class="content" id="co5">전국지부안내
+        <form action="location.html">
+        <button type="submit">바로가기 ></button>
+        </form>
+    </div>
+    <div class="content" id="co6">사고접수/현장출동
+        <div id="plus1">
+           1577-1111
+        </div>
+    </div>
+    <div class="content" id="co7">민원콜센터
+        <div id="plus2">
+           1577-2222
+        </div>
+    </div>
+    <div class="content" id="co8">현장출동 불만접수센터
+        <div id="plus3">
+           1577-3333
+        </div>
+    </div>
+    
+    </div>
+    <div class="second-box">
+    <p style="text-align: center; font-weight: bold; font-size: 30px;">보험료 조회</p> <br>
+    <br>
+    <label for="name" style="color: #003355; font-size: 15px; font-weight: bold;">회원 이름</label><br />
+            <input type="text" id="name" name="name" placeholder="성함을 입력하세요." /><br /><br />
+            <label for="password" style="color: #003355; font-size: 15px; font-weight: bold;">비밀번호</label><br />
+            <input type="password" id="password" name="password" placeholder="비밀번호를 입력하세요." /><br /><br />
+            <button type="submit">조회</button>
+
+
+    </div>
+   
+  </main>
+    <footer id="footer">
+        <img src="./images/markimage.png" alt="" style="width: 150px;">
+    <p style="font-size: 25px;">전국화물자동차공제조합</p> <br>
+    <p style="font-size: 15px; padding-top: 20px;">서울시 서초구 동작대로 320 cu건물 2층 | 대표전화 : 02-1111-1111 | 팩스 : 02-2222-2222</p>
+    
+    </footer>
+        
+    
+</body>
+</html>
